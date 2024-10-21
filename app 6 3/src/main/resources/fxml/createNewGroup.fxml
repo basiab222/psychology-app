@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Text?>
+
+<?import javafx.scene.control.ListView?>
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="414.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CreateNewGroupController">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="202.0" minWidth="10.0" prefWidth="164.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="281.0" minWidth="10.0" prefWidth="250.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints maxHeight="253.0" minHeight="10.0" prefHeight="95.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="260.0" minHeight="10.0" prefHeight="186.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="127.0" minHeight="3.0" prefHeight="69.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Groups's name:">
+            <GridPane.margin>
+                <Insets left="10.0" />
+            </GridPane.margin>
+        </Text>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Students:" GridPane.rowIndex="1" GridPane.valignment="TOP">
+            <GridPane.margin>
+                <Insets left="10.0" />
+            </GridPane.margin>
+        </Text>
+        <TextField fx:id="groupsNameTextField" GridPane.columnIndex="1">
+            <GridPane.margin>
+                <Insets right="10.0" />
+            </GridPane.margin>
+        </TextField>
+        <ScrollPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <GridPane.margin>
+                <Insets right="10.0" />
+            </GridPane.margin>
+            <content>
+                <ListView fx:id="studentsListView" prefHeight="300.0" prefWidth="250.0"/>
+            </content>
+        </ScrollPane>
+        <Button mnemonicParsing="false" onAction="#buttonGoBack" text="Go back" GridPane.halignment="LEFT" GridPane.rowIndex="2">
+            <GridPane.margin>
+                <Insets left="30.0" />
+            </GridPane.margin>
+        </Button>
+        <Button mnemonicParsing="false" onAction="#buttonOk" text="Create" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+            <GridPane.margin>
+                <Insets right="30.0" />
+            </GridPane.margin>
+        </Button>
+    </children>
+</GridPane>

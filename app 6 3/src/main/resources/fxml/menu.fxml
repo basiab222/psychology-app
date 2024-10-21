@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="772.0" prefWidth="1079.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MenuController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="409.51190185546875" minWidth="10.0" prefWidth="226.77325439453125" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="676.4028167724609" minWidth="0.0" prefWidth="91.02813720703125" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="676.4028167724609" minWidth="10.0" prefWidth="548.9718627929688" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="676.4028167724609" minWidth="10.0" prefWidth="118.56903076171875" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="347.563720703125" minHeight="10.0" prefHeight="108.62421417236328" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="365.9330520629883" minHeight="10.0" prefHeight="164.54217529296875" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="216.39297485351562" minHeight="10.0" prefHeight="157.45782470703125" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="221.78826904296875" minHeight="10.0" prefHeight="98.82501220703125" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="200.96865844726562" minHeight="10.0" prefHeight="113.36175537109375" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="200.96865844726562" minHeight="10.0" prefHeight="128.80230712890625" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <VBox fx:id="menu" maxWidth="-Infinity" prefHeight="600.0" prefWidth="171.0" style="-fx-background-color: white;" GridPane.rowSpan="6">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="MENU" textAlignment="CENTER" wrappingWidth="178.16289520263672">
+               <font>
+                  <Font name="Al Bayan Plain" size="30.0" />
+               </font>
+            </Text>
+            <Button mnemonicParsing="false" onAction="#buttonIAMaterials" prefHeight="43.0" prefWidth="184.0" text="IA Materials" />
+            <Button mnemonicParsing="false" onAction="#buttonIADrafts" prefHeight="43.0" prefWidth="184.0" text="IA Drafts" />
+            <Button mnemonicParsing="false" onAction="#buttonIAFinals" prefHeight="43.0" prefWidth="184.0" text="IA Finals" />
+            <Button mnemonicParsing="false" onAction="#buttonIAApplication" prefHeight="43.0" prefWidth="184.0" text="EE Application Forms" />
+            <Button mnemonicParsing="false" onAction="#buttonIAPlans" prefHeight="43.0" prefWidth="184.0" text="EE Plans" />
+            <Button mnemonicParsing="false" onAction="#buttonEEDrafts" prefHeight="43.0" prefWidth="184.0" text="EE Drafts" />
+            <Button mnemonicParsing="false" onAction="#buttonEEFinals" prefHeight="43.0" prefWidth="184.0" text="EE Finals" />
+            <Button mnemonicParsing="false" onAction="#buttonEEReflections" prefHeight="43.0" prefWidth="184.0" text="EE Reflections" />
+            <Button mnemonicParsing="false" onAction="#buttonCreateAssignment" prefHeight="43.0" prefWidth="184.0" text="Add new assignmnent" />
+            <Button mnemonicParsing="false" onAction="#buttonEditGroups" prefHeight="43.0" prefWidth="184.0" text="Edit groups" />
+         </children>
+      </VBox>
+      <Text fx:id="textWelcome" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="TOP">
+         <font>
+            <Font size="21.0" />
+         </font>
+         <GridPane.margin>
+            <Insets top="20.0" />
+         </GridPane.margin>
+      </Text>
+      <Button mnemonicParsing="false" onAction="#logOut" prefWidth="91.0" text="Log out" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="5">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Text fx:id="statisticsText" strokeType="OUTSIDE" strokeWidth="0.0" text="statistics" wrappingWidth="687.2640991210938" GridPane.columnIndex="1" GridPane.rowIndex="5" GridPane.valignment="TOP">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+   </children>
+</GridPane>
